@@ -3,6 +3,8 @@ package cn.web1992.spring.boots.springboots.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 /**
  * @author web1992
  * @date 2020/3/15  11:58
@@ -14,6 +16,7 @@ public class HomeController {
     @GetMapping("/")
     public User hello() {
 
+        System.out.println("Time is " + new Date());
         return new User("web1992", "18");
     }
 
